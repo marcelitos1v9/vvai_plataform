@@ -214,30 +214,6 @@ const About = () => {
           ))}
         </div>
 
-        {/* Call to Action */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="text-center mt-20"
-        >
-          <h3 className="text-3xl md:text-4xl font-bold mb-6 text-text">
-            Pronto para começar seu projeto?
-          </h3>
-          <p className="text-xl text-text/80 max-w-2xl mx-auto mb-8">
-            Vamos transformar suas ideias em realidade com tecnologia e inovação.
-          </p>
-          <motion.a
-            href="#contact"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center px-8 py-4 bg-primary text-white rounded-full text-lg font-semibold hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl"
-          >
-            Fale conosco
-            <FaArrowRight className="ml-2" />
-          </motion.a>
-        </motion.div>
       </div>
     </section>
   );

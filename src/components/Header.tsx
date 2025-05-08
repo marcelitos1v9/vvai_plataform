@@ -19,7 +19,7 @@ const Header = () => {
       setShowScrollTop(window.scrollY > 500);
 
       // Atualiza a seção ativa baseado no scroll
-      const sections = ['home', 'about', 'projects', 'tech', 'team', 'blog', 'contact'];
+      const sections = ['home', 'about', 'projects', 'tech', 'team', 'contact'];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -51,7 +51,6 @@ const Header = () => {
     { label: 'Projetos', href: 'projects' },
     { label: 'Tecnologias', href: 'tech' },
     { label: 'Equipe', href: 'team' },
-    { label: 'Blog', href: 'blog' },
     { label: 'Contato', href: 'contact' },
   ];
 
@@ -89,7 +88,7 @@ const Header = () => {
                   alt="VVAI Logo"
                   width={75}
                   height={75}
-                  className="w-10 h-10 transition-transform duration-300 group-hover:rotate-12"
+                  className="w-12 h-12 transition-transform duration-300 group-hover:rotate-12"
                   priority
                 />
               </motion.div>
@@ -102,10 +101,11 @@ const Header = () => {
                 <motion.button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className={`relative px-2 py-1 text-text hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md ${
+                  className={`relative px-2 py-1 text-text hover:text-primary transition-colors focus:outline-none ${
                     activeSection === item.href ? 'text-primary' : ''
                   }`}
                   aria-label={`Ir para seção ${item.label}`}
+                  aria-current={activeSection === item.href ? 'page' : undefined}
                   whileHover={{ y: -2 }}
                   whileTap={{ y: 0 }}
                 >
@@ -124,7 +124,7 @@ const Header = () => {
 
             {/* Menu Mobile */}
             <motion.button
-              className="md:hidden p-2 text-text focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md"
+              className="md:hidden p-2 text-text hover:text-primary focus:outline-none rounded-md transition-colors"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
               aria-expanded={isMobileMenuOpen}
@@ -156,7 +156,7 @@ const Header = () => {
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.2 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
                 className="md:hidden overflow-hidden bg-background/95 backdrop-blur-md shadow-lg border-t border-primary/10"
                 id="mobile-menu"
                 role="menu"

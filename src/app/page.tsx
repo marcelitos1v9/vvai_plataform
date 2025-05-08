@@ -9,6 +9,8 @@ import Blog from '@/components/sections/Blog';
 import Contact from '@/components/sections/Contact';
 import Footer from '@/components/Footer';
 import Script from 'next/script';
+import ScrollProgress from '@/components/ScrollProgress';
+import ScrollToTop from '@/components/ScrollToTop';
 
 export const metadata: Metadata = {
   title: 'VVAI - Inovação e Tecnologia para o Futuro',
@@ -78,7 +80,8 @@ export default function Home() {
           }),
         }}
       />
-      <main className="min-h-screen">
+      <ScrollProgress />
+      <main className="min-h-screen relative">
         <Header />
         <Hero />
         <About />
@@ -88,6 +91,7 @@ export default function Home() {
         {/* <Blog /> */}
         <Contact />
         <Footer />
+        <ScrollToTop />
       </main>
     </>
   );
