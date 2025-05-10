@@ -12,10 +12,8 @@ const Team = () => {
       image: '/team/bruno.jpg',
       description: 'Especialista em React Native, desenvolvendo aplicativos nativos e multiplataforma.',
       social: {
-        linkedin: { url: '#', icon: <FaLinkedin /> },
-        github: { url: '#', icon: <FaGithub /> },
-        twitter: { url: '#', icon: <FaTwitter /> },
-        email: { url: 'mailto:joao@vvai.com.br', icon: <FaEnvelope /> },
+        linkedin: { url: 'https://www.linkedin.com/in/bruno-souza-506523323/', icon: <FaLinkedin /> },
+        github: { url: 'https://github.com/bruno-souza013', icon: <FaGithub /> },
       },
     },
     {
@@ -24,10 +22,8 @@ const Team = () => {
       image: '/team/daniel.jpg',
       description: 'Desenvolvedor full-stack com experiência em React e Node.js, criando sistemas escaláveis.',
       social: {
-        linkedin: { url: '#', icon: <FaLinkedin /> },
-        behance: { url: '#', icon: <FaBehance /> },
-        dribbble: { url: '#', icon: <FaDribbble /> },
-        email: { url: 'mailto:maria@vvai.com.br', icon: <FaEnvelope /> },
+        linkedin: { url: 'http://www.linkedin.com/in/daniel-augusto-mandira', icon: <FaLinkedin /> },
+        github: { url: 'https://github.com/DanielMandira', icon: <FaGithub /> },
       },
     },
     {
@@ -36,10 +32,8 @@ const Team = () => {
       image: '/team/joao.jpg',
       description: 'Especialista em React e TypeScript, desenvolvendo interfaces modernas e responsivas.',
       social: {
-        linkedin: { url: '#', icon: <FaLinkedin /> },
-        github: { url: '#', icon: <FaGithub /> },
-        twitter: { url: '#', icon: <FaTwitter /> },
-        email: { url: 'mailto:pedro@vvai.com.br', icon: <FaEnvelope /> },
+        linkedin: { url: 'https://www.linkedin.com/in/jpfcordeiro', icon: <FaLinkedin /> },
+        github: { url: 'https://github.com/jpfcordeiro', icon: <FaGithub /> },
       },
     },
     {
@@ -48,10 +42,7 @@ const Team = () => {
       image: '/team/leonardo.jpg',
       description: 'Especialista em Node.js e Python, desenvolvendo APIs robustas e seguras.',
       social: {
-        linkedin: { url: '#', icon: <FaLinkedin /> },
-        github: { url: '#', icon: <FaGithub /> },
-        twitter: { url: '#', icon: <FaTwitter /> },
-        email: { url: 'mailto:pedro@vvai.com.br', icon: <FaEnvelope /> },
+        github: { url: 'https://github.com/wchrLeonardo', icon: <FaGithub /> },
       },
     },
     {
@@ -60,10 +51,8 @@ const Team = () => {
       image: '/team/foto_marcelo.jpg',
       description: 'Desenvolvedor full-stack com expertise em React e Node.js, criando sistemas distribuídos.',
       social: {
-        linkedin: { url: '#', icon: <FaLinkedin /> },
-        github: { url: '#', icon: <FaGithub /> },
-        twitter: { url: '#', icon: <FaTwitter /> },
-        email: { url: 'mailto:pedro@vvai.com.br', icon: <FaEnvelope /> },
+        linkedin: { url: 'https://www.linkedin.com/in/marcelo-augusto-oo/', icon: <FaLinkedin /> },
+        github: { url: 'https://github.com/marcelitos1v9', icon: <FaGithub /> },
       },
     },
   ];

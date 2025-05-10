@@ -17,6 +17,11 @@ export const metadata: Metadata = {
   description: 'Somos a VVAI, uma equipe apaixonada por transformar ideias em soluções tecnológicas inovadoras. Desenvolvemos projetos com as mais modernas tecnologias.',
   keywords: 'VVAI, tecnologia, inovação, desenvolvimento, software, equipe, inteligência artificial, machine learning, web development, mobile development',
   authors: [{ name: 'VVAI Team' }],
+  icons: {
+    icon: '/logos/logo_fundo_escuro_1.png',
+    shortcut: '/logos/logo_fundo_escuro_1.png',
+    apple: '/logos/logo_fundo_escuro_1.png',
+  },
   openGraph: {
     title: 'VVAI - Inovação e Tecnologia para o Futuro',
     description: 'Somos a VVAI, uma equipe apaixonada por transformar ideias em soluções tecnológicas inovadoras.',
@@ -25,7 +30,7 @@ export const metadata: Metadata = {
     siteName: 'VVAI',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/logos/logo_fundo_escuro_1.png',
         width: 1200,
         height: 630,
         alt: 'VVAI - Inovação e Tecnologia',
@@ -66,7 +71,7 @@ export default function Home() {
             '@type': 'Organization',
             name: 'VVAI',
             url: 'https://vvai.com.br',
-            logo: 'https://vvai.com.br/logo.svg',
+            logo: '/logos/logo_fundo_escuro_1.png',
             description: 'Somos a VVAI, uma equipe apaixonada por transformar ideias em soluções tecnológicas inovadoras.',
             address: {
               '@type': 'PostalAddress',
