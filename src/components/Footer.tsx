@@ -128,22 +128,28 @@ const Footer = () => {
           {/* Contato */}
           <div>
             <h3 className="text-xl font-bold mb-6 text-text">Contato</h3>
-            <ul className="space-y-4 text-text/80">
-              <li className="flex items-center space-x-3">
-                <FaEnvelope className="text-primary" />
-                <a href="mailto:contato@vvai.com.br" className="hover:text-primary transition-colors">
-                  contato@vvai.com.br
+            <ul className="space-y-6 text-text/90">
+              <li className="flex items-center space-x-4">
+                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10">
+                  <FaEnvelope className="text-primary text-lg" />
+                </div>
+                <a href="mailto:vvai2023ltda@gmail.com" className="text-text hover:text-primary transition-colors font-medium">
+                  vvai2023ltda@gmail.com
                 </a>
               </li>
-              <li className="flex items-center space-x-3">
-                <FaPhone className="text-primary" />
-                <a href="tel:+5511999999999" className="hover:text-primary transition-colors">
+              <li className="flex items-center space-x-4">
+                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10">
+                  <FaPhone className="text-primary text-lg" />
+                </div>
+                <a href="tel:+5511999999999" className="text-text hover:text-primary transition-colors font-medium">
                   +55 (11) 99999-9999
                 </a>
               </li>
-              <li className="flex items-center space-x-3">
-                <FaMapMarkerAlt className="text-primary" />
-                <span>São Paulo, SP - Brasil</span>
+              <li className="flex items-center space-x-4">
+                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10">
+                  <FaMapMarkerAlt className="text-primary text-lg" />
+                </div>
+                <span className="text-text font-medium">Registro, SP - Brasil</span>
               </li>
             </ul>
           </div>

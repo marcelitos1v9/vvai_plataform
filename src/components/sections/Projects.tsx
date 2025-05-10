@@ -6,11 +6,10 @@ import Image from 'next/image';
 const Projects = () => {
   const projects = [
     {
-      title: 'Sistema de Gestão Inteligente',
-      description: 'Plataforma completa para gestão empresarial com IA integrada.',
-      image: '/projects/project1.svg',
-      tags: ['React', 'Node.js', 'MongoDB', 'IA'],
-      link: '#',
+      title: 'Calm Wave',
+      description: 'Sistema inteligente de eliminação de ruídos para pessoas com TPAc, proporcionando conforto e qualidade de vida.',
+      image: '/Projects/logo_calm_wave.png',
+      tags: ['React', 'Node.js', 'Python', 'IA'],
     },
     // {
     //   title: 'E-commerce Personalizado',
@@ -56,18 +55,19 @@ const Projects = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <div className="relative h-48 bg-background">
+              <div className="relative h-64 bg-background">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-contain p-4"
+                  className="object-cover w-full h-full"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-text">{project.title}</h3>
                 <p className="text-text/80 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
@@ -77,25 +77,6 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <a
-                  href={project.link}
-                  className="inline-flex items-center text-primary hover:text-secondary transition-colors"
-                >
-                  Ver projeto
-                  <svg
-                    className="w-4 h-4 ml-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
-                  </svg>
-                </a>
               </div>
             </motion.div>
           ))}
